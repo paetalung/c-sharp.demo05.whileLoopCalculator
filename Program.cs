@@ -7,18 +7,16 @@ namespace demo05.whileLoopCalculator
         static void Main(string[] args)
         {
             int add = 0;
-            int total = 0;
+            double total = 0.0;
 
             Console.WriteLine("How many rounds");
-            string get_round = Console.ReadLine();
-            int round = int.Parse(get_round);  // convert str 2 int
+            int round = int.Parse(Console.ReadLine());  // convert str 2 int
 
             while (add < round)
             {
                 add++;
                 Console.WriteLine("Please enter your "+add+" value :");
-                string get_sum = Console.ReadLine();
-                int summa = int.Parse(get_sum);
+                double summa = double.Parse(Console.ReadLine());
                 total = total + summa;
             }
             Console.WriteLine("Your answer is : "+total+".");
