@@ -15,7 +15,7 @@ namespace demo05.whileLoopCalculator
             while (add < round)
             {
                 add++;
-                Console.Write("Please enter your "+add+" value :");
+                Console.Write("Please enter your "+add+" value : ");
                 double summa = double.Parse(Console.ReadLine());
                 total = total + summa;
             }
